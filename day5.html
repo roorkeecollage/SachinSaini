@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    
+</head>
+<body onload="">
+    <h1 >javascript Example</h1>
+    <input id="userinput" placeholder="Entre your Name">
+    <button onclick="myfunction3()"> Click Me!!</button>
+    <script>
+        function myfunction3(){
+            let name = document.getElementById("userinput").value;
+            console.log("Selected value",name)
+            if(name.length < 3){
+             alert("ERROR: Name lenth cannot be less than 3")
+            } else if(name.length > 10){
+                alert("ERROR: Name lenght cannot be greather than 10")
+            }else{
+                for(let i=0;i<name.length;i++){
+                    let digit = parseInt(name[i]);
+                    if(isNaN(digit)){
+                        alert("Text should only have a number ");
+                    }else{
+                        console.log("Looks good")
+                    }
+                }
+                console.log("Validation Complete")
+            }
+        }
+
+</script>
+</body>
+</html>
