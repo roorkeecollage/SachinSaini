@@ -1,5 +1,8 @@
 import phir from './image/phir.png'
-import avtar from './image/avtar.png'
+import avtar from './image/avtar.+++++++png'
+
+
+
 
 
 
